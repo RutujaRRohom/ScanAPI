@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "4c97db4c-4968-40a8-ae13-f38b182900df",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27702824"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"email\":\"rrr@gmail.com\",\r\n    \"password\":\"rutuja@12\",\r\n    \"name\":\"rutuja\",\r\n    \"role\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:33001/register",
+					"host": [
+						"localhost"
+					],
+					"port": "33001",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rutuja",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rrr@gmail.com\",\r\n    \"password\":\"rutuja@12\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:33001/login",
+					"host": [
+						"localhost"
+					],
+					"port": "33001",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
